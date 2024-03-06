@@ -1,5 +1,6 @@
 class DataBaseModule {
 public:
+<<<<<<< HEAD
 	void Connection() {
 		//Подключение к базе данных игроков
 	}
@@ -10,5 +11,9 @@ public:
 
 	void PlayerDataModify() {
 		//Работа с даннами игроков
+=======
+	void Changing() {
+		//измененный файл
+>>>>>>> game_logic_branch
 	}
 };
