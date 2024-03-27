@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт из репозитория GitHub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #FFD700;
+            color: black;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #666;
+        }
+
+        main {
+            padding: 20px;
+            margin-bottom: 80px; 
+	    background-color: #333;
+        }
+
+        footer {
+            background-color: #FFD700;
+            color: #333;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: flex; 
+            justify-content: center; 
+            font-family: Arial, sans-serif; 
+            font-size: 14px; 
+        }
+
+        footer ul {
+            list-style-type: none; 
+            padding: 0;
+            margin: 0;
+        }
+
+        footer ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        footer ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        footer ul li a:hover {
+            color: #ccc;
+        }
+
+        #module-description {
+            background-color: #333; 
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 5px; 
+	    color: white;
+        }
+
+        #module-description h2 {
+            color: #333; 
+        }
+
+        #module-description ul {
+            list-style-type: none; 
+            padding: 0;
+            margin: 0;
+        }
+
+        #module-description ul li {
+            margin-bottom: 10px; 
+        }
+
+        #module-description ul li h3 {
+            margin-bottom: 5px; 
+        }
+	footer ul {
+	    margin-top: 13px;
+	    margin-left: 13px;
+	}
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Сайт из репозитория GitHub для проекта "Онлайн Тетрис"</h1>
+    </header>
+    <main>
+        <!-- Блок для описания модулей -->
+    <section id="module-description">
+    <h2>Описание модулей проекта:</h2>
+    <ul>
+        <li>
+            <h3>1. Главное меню:</h3>
+            <ul>
+                <li>a. Авторизация учётной записи.</li>
+                <li>b. Настройки звука, графики, игрового процесса.</li>
+                <li>c. Выбор режима игры: против живых игроков/ ботов, выбор количества игроков.</li>
+		<li>d. Список друзей.</li>
+            </ul>
+        </li>
+        <li>
+            <h3>2. Логика игрового процесса:</h3>
+            <ul>
+                <li>a. Создание фигур: механизм генерации блоков для дальнейшего их использования игроком.</li>
+                <li>b. Таймер: счётчик времени длительности игровой сессии.</li>
+                <li>c. Постепенное наращивание сложности: повышение скорости генерации фигур в зависимости от длительности игровой сессии.</li>
+                <li>d. Подсчёт очков игрока: подсчёт фигур, успешно расположенных игроком при достижении границы игрового поля.</li>
+		<li>e. Выявление победителя: сравнение результатов игроков при окончании игровой сессии.</li>
+            </ul>
+        </li>
+        <li>
+            <h3>3. Логика сервера:</h3>
+            <ul>
+                <li>a. Создание игровой сессии: подготовка игрового пространства в зависимости от количества игроков.</li>
+                <li>b. Проверка игроков: проверка целостности игрового клиента пользователей при их подключении к серверу.</li>
+                <li>c. Завершение игровой сессии: после того, как все игроки дойдут до верхней черты своего поля и подсчёта очков всех игроков происходит демонстрация таблицы результатов и освобождения сервера с переведением игроков в главное меню.</li>
+		<li>d. Запись результатов: запись результата прошедшей игры на аккаунты всех игроков.</li>
+            </ul>
+        </li>
+        <li>
+            <h3>4. Бот:</h3>
+            <ul>
+                <li>a. Логика бота: алгоритм действий бота в зависимости от сложности, выбранной игроком.</li>
+            </ul>
+        </li>
+        <li>
+            <h3>5. Анимация и звуки:</h3>
+            <ul>
+                <li>a. Анимации перемещения блоков на игровом поле.</li>
+                <li>b. Звуковое сопровождение игрового процесса: звук окончания игры, звук перемещения блоков, звук падения блоков.</li>
+                <li>c. Реализация цветового эффекта(градиента) блоков.</li>
+            </ul>
+        </li>
+        <li>
+            <h3>6. Обновление клиента игры:</h3>
+            <ul>
+                <li>a. Проверка целостности файлов клиента.</li>
+                <li>b. Проверка на наличие обновлений.</li>
+		<li>c. Отображение оповещений о доступности новой версии клиента.</li>
+            </ul>
+        </li>
+        <li>
+            <h3>8. Безопасность и защита проектов:</h3>
+            <ul>
+                <li>Функции защиты интеллектуальной собственности и работы над проектами.</li>
+            </ul>
+        </li>
+    </ul>
+    </section>
+    </main>
+    <footer>
+        <p>Ссылки на руководства:</p>
+        <ul>
+            <li><a href="html/index.html">Руководство из ЛР №4</a></li>
+            <li><a href="UsersGuide.chm">Руководство из ЛР №5</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
